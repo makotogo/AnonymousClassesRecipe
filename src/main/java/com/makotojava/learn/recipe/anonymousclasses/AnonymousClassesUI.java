@@ -104,7 +104,7 @@ public class AnonymousClassesUI extends UI {
     processButton.addClickListener(dummyVariable -> {
       // TODO: Exercise 2a code here
       // TODO: Exercise 2b and 2c code here
-      // TODO: Bonus exercise 4 here
+      // TODO: Bonus exercise here
     });
 
     // When the user clicks this button, the MessageLogger is
@@ -162,12 +162,12 @@ public class AnonymousClassesUI extends UI {
    * Private getter, returns a MessageProcessor implementation
    * as a lambda expression.
    * 
-   * TODO: Bonus exercise 4
+   * TODO: Bonus exercise
    * 
    * @return MessageProcessor implementation
    */
   private MessageProcessor getMessageProcessorLambda() {
-    // TODO: Bonus exercise 4 code here.
+    // TODO: Bonus exercise code here.
     // Use Notification.show(), and Type.TRAY_NOTIFICATION so it
     /// displays in the Tray
     return null;
