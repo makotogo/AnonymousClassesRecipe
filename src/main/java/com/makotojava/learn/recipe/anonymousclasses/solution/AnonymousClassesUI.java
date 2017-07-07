@@ -18,16 +18,12 @@ package com.makotojava.learn.recipe.anonymousclasses.solution;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.servlet.annotation.WebServlet;
-
 import com.makotojava.learn.recipe.anonymousclasses.AbstractMessageHandler;
 import com.makotojava.learn.recipe.anonymousclasses.MessageHandler;
 import com.makotojava.learn.recipe.anonymousclasses.MessageLogger;
 import com.makotojava.learn.recipe.anonymousclasses.MessageProcessor;
 import com.vaadin.annotations.Theme;
-import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.VaadinRequest;
-import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Button.ClickListener;
@@ -186,19 +182,20 @@ public class AnonymousClassesUI extends UI {
     return message -> Notification.show(message, Type.TRAY_NOTIFICATION);
   }
 
-  /**
-   * This class is the Servlet entry point for the application.
-   * 
-   * @author JSP
-   *
-   */
-  @WebServlet(urlPatterns = "/*", name = "AnonymousClassesUIServlet", asyncSupported = true)
-  @VaadinServletConfiguration(ui = AnonymousClassesUI.class, productionMode = false)
-  public static class AnonymousClassesUIServlet extends VaadinServlet {
-
-    /**
-     * 
-     */
-    private static final long serialVersionUID = 6804122840488457954L;
-  }
+  // COMMENTED OUT SO IT DOES NOT GET DEPLOYED
+// /**
+// * This class is the Servlet entry point for the application.
+// *
+// * @author JSP
+// *
+// */
+// @WebServlet(urlPatterns = "/*", name = "AnonymousClassesUIServlet", asyncSupported = true)
+// @VaadinServletConfiguration(ui = AnonymousClassesUI.class, productionMode = false)
+// public static class AnonymousClassesUIServlet extends VaadinServlet {
+//
+// /**
+// *
+// */
+// private static final long serialVersionUID = 6804122840488457954L;
+// }
 }
